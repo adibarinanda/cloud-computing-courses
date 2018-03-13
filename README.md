@@ -4,5 +4,5 @@
 ## Direktori
 
 ```sh
-[Tugas 1](https://github.com/adibarinanda/cloud-computing-courses/tree/master/Tugas%201)
+[@YourTwitter](https://twitter.com/dbader_org) – YourEmail@example.com
 ```
