@@ -1,0 +1,6 @@
+#!/usr/bin/expect -f
+send "mix archive.install https://github.com/phoenixframework/archives/raw/master/phx_new.ez"
+
+#expect {Are you sure you want to install archive "https://github.com/phoenixframework/archives/raw/master/phx_new.ez"? []}
+send "y\r"
+
