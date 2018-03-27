@@ -1,7 +1,7 @@
-# Cloud Computing Courses
-> Repository buat Mata Kuliah Cloud Computing
+## Cloud Computing Courses
+#### Repository buat Mata Kuliah Cloud Computing
 
->Cloud 10
+### Cloud 10
 
 > Drajad Bima Ajipangestu 5115100031
 
