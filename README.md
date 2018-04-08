@@ -14,12 +14,11 @@
                     \/__/         \/__/     \/__/         \/__/         ~~       
 </pre>
 
-### Cloud 10
+# Anggota
 
-> Drajad Bima Ajipangestu 5115100031
+> Drajad Bima Ajipangestu (5115100031)
+> Muhammad Adib Arinanda (5115100111)
 
-> Muhammad Adib Arinanda 5115100111
-
-## Tugas
+# Tugas
 * [Tugas 1](https://github.com/adibarinanda/cloud-computing-courses/tree/master/Tugas%201)
 * [Tugas 2](https://github.com/adibarinanda/cloud-computing-courses/tree/master/Tugas%202)
