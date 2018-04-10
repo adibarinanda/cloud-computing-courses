@@ -19,15 +19,13 @@ Soal :
 ## A. Langkah-langkah
 ### 1. Buat 3 Vagrant (1 Load Balancer + 2 Worker)
 - Buat 3 folder untuk Vagrant
+
 `mkdir loadbalancer1 worker1 worker2`
 - Masuk ke folder loadbalancer1
+
 `cd loadbalancer1` 
 - a
 	
-4. Pada contoh kasus ini kita ingin menggunakan os Ubuntu (12.04) Precise 64 bit. Maka dari itu kita perlu download **Vagrant Box** terlebih dahulu. Dengan cara:
-
-	`vagrant box add hashicorp/precise64`
-
 
 ### 2. Provisioning Install software
 	- Load Balancer : 
