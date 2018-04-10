@@ -13,3 +13,38 @@ Soal :
 
 1. Lakukan soal nomor 1 dan dokumentasikan bagaimana cara setupnya pada laporan markdown.
 2. Untuk nomor 2 dan 3 merupakan analisa terhadap suatu masalah, jawablah pertanyaan diatas dan tulis pada laporan.
+
+### 1.
+### setup
+
+```sh
+./load_balancing start [balancing_method]
+```
+> Balancing method diisi dengan algoritmanya, 
+contoh:
+```sh
+./load_balancing start round_robin
+./load_balancing start ip_hash
+./load_balancing start least_conn
+```
+
+#### Mengubah Balancing Method
+
+```sh
+./load_balancing method [balancing_method]
+```
+Example
+```sh
+./load_balancing method round_robin
+./load_balancing method ip_hash
+./load_balancing method least_conn
+```
+
+#### Destroy
+untuk destroy balancer/worker aktif
+
+```sh
+./load_balancing destroy
+```
+
+---
