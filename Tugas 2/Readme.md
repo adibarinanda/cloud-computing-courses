@@ -35,8 +35,8 @@ Soal :
 	`sudo nano Vagrantfile`
 - Ubah bagian
 
-	config.vm.box = "base"
-	
+	config.vm.box = "base"	
+
 menjadi	
 	
 	config.vm.box = "ubuntu/xenial64"
