@@ -24,8 +24,24 @@ Soal :
 - Masuk ke folder loadbalancer1
 
 	`cd loadbalancer1` 
-- a
+- Inisiasi Project Vagrant
+
+	`vagrant init`
+- Tambakan box dengan OS Ubuntu 16.04
+
+	`vagrant box add ubuntu/xenial64`
+- Edit file Vagrantfile
+
+	`sudo nano Vagrantfile`
+- Ubah bagian
+
+	config.vm.box = "base"
 	
+menjadi	
+	
+	config.vm.box = "ubuntu/xenial64"
+
+
 
 ### 2. Provisioning Install software
 	- Load Balancer : 
