@@ -24,6 +24,10 @@ Soal :
 `cd loadbalancer1` 
 - a
 	
+4. Pada contoh kasus ini kita ingin menggunakan os Ubuntu (12.04) Precise 64 bit. Maka dari itu kita perlu download **Vagrant Box** terlebih dahulu. Dengan cara:
+
+	`vagrant box add hashicorp/precise64`
+
 
 ### 2. Provisioning Install software
 	- Load Balancer : 
