@@ -19,9 +19,9 @@ Soal :
 ## A. Langkah-langkah
 ### 1. Buat 3 Vagrant (1 Load Balancer + 2 Worker)
 - Buat 3 folder untuk Vagrant
-	`mkdir loadbalancer1 worker1 worker2`
+`mkdir loadbalancer1 worker1 worker2`
 - Masuk ke folder loadbalancer1
-	`cd loadbalancer1` 
+`cd loadbalancer1` 
 - a
 	
 
