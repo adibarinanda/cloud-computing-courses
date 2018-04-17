@@ -23,3 +23,4 @@
 # Tugas
 * [Tugas 1](https://github.com/adibarinanda/cloud-computing-courses/tree/master/Tugas%201)
 * [Tugas 2](https://github.com/adibarinanda/cloud-computing-courses/tree/master/Tugas%202)
+* [Tugas 3](https://github.com/adibarinanda/cloud-computing-courses/tree/master/Tugas%203)
