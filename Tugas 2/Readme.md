@@ -113,3 +113,9 @@ Misal, ada 2 server yaitu A dan B. Koneksi aktif pada server A berjumlah 2 konek
 
 #### IP Hash :
 Menggunakan IP source dan destination dari klien dan server untuk men-generate hash key menjadi kode yang unik. Kode ini digunakan untuk mengalokasikan klien ke server tertentu. Metode ini dapat memastikan bahwa klien akan terhubung dengan server yang sama yang sebelumnya sudah terhubung.
+
+---
+---
+
+### 3. Bagaimana mengatasi masalah session ketika kita melakukan load balancing?
+dalam load balancing ada yang bernama method sticky session. pada sticky session setelah session cookie terbentuk load balancer akan mengarahkan permintaan dari klien yang terkait dengan session, ke server yang sama tanpa mencari server baru lagi. ini memungkinkan kita untuk dapat menyimpan safe di sistem lokal tanpa memakai sistem file yang sama.
