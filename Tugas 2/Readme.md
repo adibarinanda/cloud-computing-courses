@@ -18,28 +18,22 @@ Soal :
 
 ## A. Langkah-langkah
 ### 1. Buat 3 Vagrant (1 Load Balancer + 2 Worker)
-- Buat 3 folder untuk Vagrant
+	- Buat 3 folder untuk Vagrant
+		$ mkdir loadbalancer1 worker1 worker
+	- Masuk ke folder loadbalancer1
+		$ cd loadbalancer1
+	- Inisiasi Project Vagrant
+		$ vagrant init
+	- Tambakan box dengan OS Ubuntu 16.04
+		$ vagrant box add ubuntu/xenial64
+	- Edit file Vagrantfile
+		$ sudo nano Vagrantfile
+	- Ubah bagian
+			config.vm.box = "base"	
 
-	`mkdir loadbalancer1 worker1 worker2`
-- Masuk ke folder loadbalancer1
-
-	`cd loadbalancer1` 
-- Inisiasi Project Vagrant
-
-	`vagrant init`
-- Tambakan box dengan OS Ubuntu 16.04
-
-	`vagrant box add ubuntu/xenial64`
-- Edit file Vagrantfile
-
-	`sudo nano Vagrantfile`
-- Ubah bagian
-
-	config.vm.box = "base"	
-
-menjadi	
+		menjadi	
 	
-	config.vm.box = "ubuntu/xenial64"
+			config.vm.box = "ubuntu/xenial64"
 
 
 
