@@ -58,5 +58,83 @@ Selain setup environmet mysql, mereka juga mengimport dump database web mereka m
 ### d. Buat file docker-compose.yml
 		$ sudo nano docker-compose.yml
 
+### e. Isi file docker-compose.yml seperti dibawah ini
+```
+version: '3'
+
+services:
+  worker1:
+    depends_on:
+      - db
+    image: reservasi
+    restart: always
+    environment:
+      DB_HOST: 172.20.0.110
+      DB_USERNAME: userawan
+      DB_PASSWORD: buayakecil
+      DB_NAME: reservasi
+    networks:
+      docker1:
+        ipv4_address: 172.20.0.114
+  
+  worker2:
+    depends_on:
+      - db
+    image: reservasi
+    restart: always
+    environment:
+      DB_HOST: 172.20.0.110
+      DB_USERNAME: userawan
+      DB_PASSWORD: buayakecil
+      DB_NAME: reservasi
+    networks:
+      docker1:
+        ipv4_address: 172.20.0.113
+  
+  worker3:
+    depends_on:
+      - db
+    image: reservasi
+    restart: always
+    environment:
+      DB_HOST: 172.20.0.110
+      DB_USERNAME: userawan
+      DB_PASSWORD: buayakecil
+      DB_NAME: reservasi
+    networks:
+      docker1:
+        ipv4_address: 172.20.0.112
+
+  load_balancer:
+    image: nginx:stable-alpine
+    depends_on:
+      - worker1
+      - worker2
+      - worker3
+    ports:
+      - 7777:80
+    volumes: 
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
+    networks:
+      docker1:
+        ipv4_address: 172.20.0.111
+
+  db:
+    image: mysql_reservasi
+    restart: always
+    networks:
+      docker1:
+        ipv4_address: 172.20.0.110
+
+volumes:
+  reservasi:
+
+networks:
+  docker1:
+    ipam:
+      config:
+        - subnet: 172.20.0.0/24
+```
+
 
 # Durung mari gan
