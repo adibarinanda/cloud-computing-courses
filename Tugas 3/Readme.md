@@ -25,7 +25,7 @@ Selain setup environmet mysql, mereka juga mengimport dump database web mereka m
 		- $ sudo apt-get install docker-ce
 
 ### b. Buat 2 file Dockerfile
-		- Dockerfile 1: Web Python Flask
+Dockerfile 1: Web Python Flask
 
 		FROM ubuntu:16.04
 
@@ -41,8 +41,8 @@ Selain setup environmet mysql, mereka juga mengimport dump database web mereka m
 		CMD python server.py
 	
 		EXPOSE 80
-
-		- Dockerfile 2: Setup MySQL
+---
+Dockerfile 2: Setup MySQL
 
 		FROM mysql:5.7
 		ENV MYSQL_ROOT_PASSWORD passwordawan
