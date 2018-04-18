@@ -46,12 +46,14 @@ Soal :
 
 	- Isikan masing-masing file bootstrap.sh sebagai berikut:
 		- Load Balancer : 
-			# apt-get install nginx -y
-			# apt-get install php7.0-fpm -y
+			> #!/usr/bin/env bash
+			> apt-get install nginx -y
+			> apt-get install php7.0-fpm -y
 
 		- Worker :
-			# apt-get install apache2
-			# apt-get install libapache2-mod-php7.0 php7.0-fpm -y
+			> #!/usr/bin/env bash
+			> apt-get install apache2
+			> apt-get install libapache2-mod-php7.0 php7.0-fpm -y
 
 
 ### c. Setup Algoritma yang ingin digunakan di Load Balancer
