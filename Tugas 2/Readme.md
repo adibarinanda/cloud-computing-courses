@@ -16,8 +16,8 @@ Soal :
 2. Untuk nomor 2 dan 3 merupakan analisa terhadap suatu masalah, jawablah pertanyaan diatas dan tulis pada laporan.
 
 
-## A. Langkah-langkah
-### 1. Buat 3 Vagrant (1 Load Balancer + 2 Worker)
+## 1. Langkah-langkah
+### a. Buat 3 Vagrant (1 Load Balancer + 2 Worker)
 	- Buat 3 folder untuk Vagrant
 		$ mkdir loadbalancer1 worker1 worker
 
@@ -40,7 +40,7 @@ Soal :
 
 
 
-### 2. Buat Provision untuk Instalasi Software Load Balancer dan Worker
+### b. Buat Provision untuk Instalasi Software Load Balancer dan Worker
 	- Di masing-masing folder, buat file baru bootstrap.sh
 		$ sudo nano bootstrap.sh
 
@@ -54,7 +54,7 @@ Soal :
 			# apt-get install libapache2-mod-php7.0 php7.0-fpm -y
 
 
-### 3. Setup Algoritma yang ingin digunakan di Load Balancer
+### c. Setup Algoritma yang ingin digunakan di Load Balancer
 	- Load Balancer :
 		
 		./load_balancing start [balancing_method]
