@@ -136,5 +136,6 @@ networks:
         - subnet: 172.20.0.0/24
 ```
 
-
+### f. Jalankan docker compose
+		$ docker-compose up -d
 # Durung mari gan
