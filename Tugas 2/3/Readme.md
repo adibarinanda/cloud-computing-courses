@@ -1,0 +1,2 @@
+### 3. Bagaimana mengatasi masalah session ketika kita melakukan load balancing?
+dalam load balancing ada yang bernama method sticky session. pada sticky session setelah session cookie terbentuk load balancer akan mengarahkan permintaan dari klien yang terkait dengan session, ke server yang sama tanpa mencari server baru lagi. ini memungkinkan kita untuk dapat menyimpan safe di sistem lokal tanpa memakai sistem file yang sama.
