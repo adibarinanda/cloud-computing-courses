@@ -17,6 +17,6 @@ Soal :
 
 
 ### Jawaban
-1. [Soal 1](/Tugas 2/1)
+1. [Soal 1](/Tugas2/1)
 2. [Soal 2](/Tugas 2/2)
 3. [Soal 3](/Tugas 2/3)
