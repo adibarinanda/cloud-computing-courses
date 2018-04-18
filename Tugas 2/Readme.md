@@ -17,6 +17,6 @@ Soal :
 
 
 ### Jawaban
-1. [Soal 1](/Tugas\ 2/1)
-2. [Soal 2](/Tugas\ 2/2)
-3. [Soal 3](/Tugas\ 2/3)
+1. [Soal 1](https://github.com/adibarinanda/cloud-computing-courses/tree/master/Tugas%202/1)
+2. [Soal 2](https://github.com/adibarinanda/cloud-computing-courses/tree/master/Tugas%202/2)
+3. [Soal 3](https://github.com/adibarinanda/cloud-computing-courses/tree/master/Tugas%202/3)
