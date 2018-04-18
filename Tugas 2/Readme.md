@@ -20,80 +20,52 @@ Soal :
 ### 1. Buat 3 Vagrant (1 Load Balancer + 2 Worker)
 	- Buat 3 folder untuk Vagrant
 		$ mkdir loadbalancer1 worker1 worker
+
 	- Masuk ke folder loadbalancer1
 		$ cd loadbalancer1
+
 	- Inisiasi Project Vagrant
 		$ vagrant init
+
 	- Tambakan box dengan OS Ubuntu 16.04
 		$ vagrant box add ubuntu/xenial64
+
 	- Edit file Vagrantfile
 		$ sudo nano Vagrantfile
+
 	- Ubah bagian
-			config.vm.box = "base"	
-
+		config.vm.box = "base"	
 		menjadi	
-	
-			config.vm.box = "ubuntu/xenial64"
+		config.vm.box = "ubuntu/xenial64"
 
 
 
-### 2. Provisioning Install software
-	- Load Balancer : 
-		# apt-get install nginx -y
-		# apt-get install php7.0-fpm -y
+### 2. Buat Provision untuk Instalasi Software Load Balancer dan Worker
+	- Di masing-masing folder, buat file baru bootstrap.sh
+		$ sudo nano bootstrap.sh
 
-	- Worker :
-		# apt-get install apache2
-		# apt-get install libapache2-mod-php7.0 php7.0-fpm -y
+	- Isikan masing-masing file bootstrap.sh sebagai berikut:
+		- Load Balancer : 
+			# apt-get install nginx -y
+			# apt-get install php7.0-fpm -y
+
+		- Worker :
+			# apt-get install apache2
+			# apt-get install libapache2-mod-php7.0 php7.0-fpm -y
 
 
-### 3. Setup Worker ama Load Balancer nya
-	- Worker : 
-		# Set up worker nya biar bisa baca file PHP. Edit file.conf berikut di kedua file .conf worker :
-
-		SS PASTE Disini, fileconfig isi disini
-
+### 3. Setup Algoritma yang ingin digunakan di Load Balancer
 	- Load Balancer :
-		# Set up LB nya di file default di /etc/nginx/sites-available/ (yang sudah di SYMLINK) dengan tambahan kode berikut :
+		
+		./load_balancing start [balancing_method]
+			
+		Balancing method diisi dengan algoritmanya, 
+		contoh:
+		
+		./load_balancing start round_robin
+		./load_balancing start ip_hash
+		./load_balancing start least_conn
 
-		ISI DISINI FILE CONFIGNYA
-2. Untuk nomor 2 dan 3 merupakan analisa terhadap suatu masalah, jawablah pertanyaan diatas dan tulis pada laporan.
-
-
-### 1.setup
-
-```sh
-./load_balancing start [balancing_method]
-```	
-> Balancing method diisi dengan algoritmanya, 
-contoh:
-```sh
-./load_balancing start round_robin
-./load_balancing start ip_hash
-./load_balancing start least_conn
-```
-
-#### Mengubah Balancing Method
-
-```sh
-./load_balancing method [balancing_method]
-```
-Example
-```sh
-./load_balancing method round_robin
-./load_balancing method ip_hash
-./load_balancing method least_conn
-```
-
-#### Destroy
-untuk destroy balancer/worker aktif
-
-```sh
-./load_balancing destroy
-```
-
----
----
 
 ### 2.Analisa apa perbedaan load balancing round-robin, least-connected, dan ip-hash
 
