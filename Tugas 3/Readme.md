@@ -28,7 +28,7 @@ Selain setup environmet mysql, mereka juga mengimport dump database web mereka m
 		- Dockerfile 1: Web Python Flask
 
 		FROM ubuntu:16.04
-		
+
 		RUN apt update && apt install -y wget apt-utils zip python2.7 python-pip
 		RUN apt install -y libmysqlclient-dev
 		RUN pip install --upgrade pip
@@ -52,6 +52,7 @@ Selain setup environmet mysql, mereka juga mengimport dump database web mereka m
 
 		COPY ./reservasi.sql /docker-entrypoint-initdb.d
 ### c. Buat image
+		$ docker build -t reservasi
 		$ docker build -t mysql_reservasi
 
 ### d. Buat file docker-compose.yml
