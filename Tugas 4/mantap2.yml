@@ -7,10 +7,10 @@
     - { role: worker }
     
 
-# - hosts: db
-#   vars:
-#     username: 'regal'
-#     password: 'bolaubi'
-#   roles:
-#     - { role: db }
+ - hosts: db
+   vars:
+     username: 'regal'
+     password: 'bolaubi'
+   roles:
+     - { role: db }
 
